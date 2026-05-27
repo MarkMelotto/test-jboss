@@ -38,7 +38,8 @@ jobs:
         run: |
           echo "Configuring myst.yml for LaTeX build..."
           yq -i '
-            .extends = ["toc.yml", "export latex.yml", "plugins.yml"]           
+            .extends = ["toc.yml", "export latex.yml"]  
+            # .extends = ["toc.yml", "export latex.yml", "plugins.yml"]           
           ' myst.yml
 
 
